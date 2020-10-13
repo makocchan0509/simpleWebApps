@@ -146,6 +146,9 @@ Apの実行
 結果確認
 ```
 http://{publicIP:8080}
+
+# 以下のJSONメッセージが返ってきます。
+{"result":"Success","errMessage":"Hello Golang World!"}
 ```
 
 ここまででVMのファイアウォールで8080ポートを許可していればAPから応答があります。
@@ -198,4 +201,8 @@ systemctl restart nginx
 #APのレスポンスが応答されるはず
 
 http://{publicIP}:80
+
+# 以下のJSONメッセージが返ってきます。
+{"result":"Success","errMessage":"Hello Golang World!"}
+
 ```
