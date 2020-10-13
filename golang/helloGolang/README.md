@@ -5,6 +5,15 @@
 - VMにはPublicIPが付与されている前提
 - ファイアウォールではssh(22),http(80,8080)を許可しておくこと。
 
+
+## 0. VMへのssh
+以下のコマンドでVMへリモート接続します。
+VM作れない方はここまで作るので連絡ください。
+
+```
+ssh -i {keyfile} {user}@{publicIP}
+```
+
 ## 0.rootユーザのパスワード
 
 以下のコマンドでrootユーザのパスワードを設定する。
@@ -74,7 +83,6 @@ curl {publicIP}:80
 ---
 
 ## 2.Install Golang
-
 
 ```
 cd /usr/local/src
