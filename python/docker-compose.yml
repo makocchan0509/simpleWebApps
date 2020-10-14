@@ -1,0 +1,11 @@
+version: '3'
+services:
+  python3:
+    build: .
+    container_name: 'python3'
+    working_dir: '/root/'
+    tty: true
+    ports:
+        - 8085:8085
+    volumes:
+      - ./opt:/root/opt
