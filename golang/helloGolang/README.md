@@ -2,7 +2,6 @@
 
 - クラウド: GCP
 - VM: Compute Engine (ubuntu-1604-xenial-v20200923)
-- VMにはPublicIPが付与されている前提
 - ファイアウォールではssh(22),http(80,8080)を許可する。
 
 ---
@@ -90,7 +89,7 @@ su -
 
 ---
 
-## 1.Install Nginx(任意)
+## 1.Install Nginx
 
 以下のコマンドでkeyファイルをDL
 ```
@@ -276,3 +275,12 @@ http://{publicIP}:80
 {"result":"Success","errMessage":"Hello Golang World!"}
 
 ```
+
+---
+
+## 4. クリーニング
+
+1. コンソール画面左上の[ナビゲーションメニュ]→[ComputeEngine]→[VMインスタンス]をクリック
+2. 作成したVMインスタンスを選択して画面中央上辺りのゴミ箱アイコンをクリック
+
+以上
